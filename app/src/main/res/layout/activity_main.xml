@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вибрано:" />
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/firm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radioProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif"
+                android:text="Товар"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/notebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Ноутбук"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/planshet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Планшет"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/smartphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Смартфон"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телевізор"
+
+                android:textColor="#003384" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radioFirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif"
+                android:text="Фірма"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/samsung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Samsung"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/xiaomi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Xiaomi"
+                android:textColor="#003384" />
+
+            <RadioButton
+                android:id="@+id/asus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Asus"
+                android:textColor="#003384" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:text="Cancel"
+                android:onClick="clickCancel"/>
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="100dp"
+                android:text="Ok"
+                android:onClick="clickOk"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
